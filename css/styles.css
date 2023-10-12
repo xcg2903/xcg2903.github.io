@@ -1,0 +1,255 @@
+@font-face{
+    font-family: robotohead; 
+    src: url(https://people.rit.edu/xcg2903/235/project1/media/RobotoCondensed-Bold.ttf);
+}
+@font-face{
+    font-family: robotohead2; 
+    src: url(https://people.rit.edu/xcg2903/235/project1/media/RobotoCondensed-Regular.ttf);
+}
+@font-face{
+    font-family: sans; 
+    src: url(https://people.rit.edu/xcg2903/235/project1/media/NunitoSans-SemiBold.ttf);
+}
+@media only screen and (max-width: 550px) {
+    iframe {
+      width: auto;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .aboutme {
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .aboutme {
+        flex-wrap: nowrap;
+    }
+}
+
+html{
+    background-color: black;
+    height: 100%;
+}
+body{
+    margin: 0;
+    background-color: black;
+    font-family: sans;
+    min-height: 100%;
+}
+
+h1{
+    font-family: robotohead;
+}
+h2{
+    font-family: robotohead;
+}
+
+a:link{
+    color: #6daedb;
+    text-decoration: none;
+}
+a:visited{
+    color: #6daedb;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+
+    color: #6daedb;
+}
+.header{
+    background-color: black;
+    color: white;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-size: 14pt;
+}
+.tagline{
+    background-color: #1d70a2;
+    color: white;
+
+    text-align: center;
+    font-size: 24pt;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+.aboutme{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    min-width: 25rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #173753;
+    border: 0.5rem solid white;
+
+}
+.aboutmetext{
+    padding: 4rem 2rem 4rem 2rem;
+    font-size: 12pt;
+    width: 40rem;
+}
+.face{
+    width: 22rem;
+    padding-left: 1rem;
+    text-align: center;
+}
+.face img{
+    padding: 8%;
+}
+.name{
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 12%;
+}
+.pages{
+    text-align: right;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 8%;
+
+    word-spacing: 150%;
+    font-size: 2.5rem;
+}
+
+.gallery{
+    background-color: #1d70a2;
+    color: white;
+    text-align: center;
+    font-size: 13pt;
+}
+.projects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    word-wrap: normal;
+
+    background-color: black;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 20px;
+}
+
+.projects div{
+    background-color: #173753;
+    padding: 1.6rem;
+    border: 0.25rem solid white;
+    max-width: 24rem;
+}
+.projects :hover{
+    border: 0.75rem solid lightgrey;
+    border-style: inset;
+    color: white;
+    font-size: 11.5pt;
+    background-color: #11293d;
+}
+.projects :hover h2{
+    font-size: 1.4rem;
+}
+.projects :hover h3{
+    font-size: 0.95rem;
+}
+.projects div :hover{
+    border: 0rem solid white;
+}
+.projects div h2{
+    padding-top: 0.8rem;
+}
+.projects img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.projectvideo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    word-wrap: normal;
+
+    background-color: #173753;
+
+    margin: 1% 0px 1% 0px;
+    gap: 2rem;
+    padding: 3rem;
+    min-width: 75%;
+
+    border: 0.5rem solid white;
+    font-size: 14pt;
+}
+.videoplay{
+    max-width: max-content;
+}
+.videoplay iframe{
+    max-width: 100%;
+}
+
+.art{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0rem 5% 0rem 5%;
+}
+#tarotgallery p{
+    text-align: center;
+}
+
+.resources{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    word-wrap: normal;
+
+    background-color: black;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    justify-content: center;
+}
+.resources div{
+    background-color: #173753;
+    border: 0.25rem solid white;
+    width: 35rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+
+    align-items: center;
+    justify-content: center;
+}
+.resources iframe{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.resources .itchdiv{
+    width: 35rem;
+}
+.resources .gallerydiv2{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}

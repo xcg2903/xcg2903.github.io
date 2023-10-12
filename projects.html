@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xander's Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src="src/scriptprojects.js"></script> 
+</head>
+<body>
+    <div class="has-text-white">
+        <div class=header>
+            <div class=name><h1 class="title is-size-3-desktop is-size-4-tablet is-size-7-mobile has-text-info-light"><a href="index.html">Xander Goodwin</a></h1></div>
+            <div class=pages>
+                <h1 class="title is-size-3-desktop is-size-4-tablet is-size-7-mobile has-text-info-light">
+                    <a href="games.html">Games </a>
+                    <a href="projects.html">Projects</a>
+                    <a href="art.html">Art</a>
+                    <a href="index.html#contacthead">Contact</a>
+                </h1>
+            </div>
+        </div>
+
+        <div class=gallery id="projects"><h1 class="title is-size-2-desktop is-size-4-mobile has-text-white py-2">Projects</h1></div>
+
+        <div class=projects>
+            <div id="gallerydiv10"><img src="media/WizardFrog.PNG" alt="Wizard Frog"><h2 class="title is-4 has-text-info-light mt-2">Wizard Frog</h2><h3 class="title is-6 has-text-info-light">Nov 2022 - Dec 2022</h3><h3 class="title is-6 has-text-info-light">3D Character Artist/Rigger</h3>
+                <p></p></div>
+            <div id="gallerydiv11"><img src="media/Graphics.png" alt="DirectX Graphics Engine"><h2 class="title is-4 has-text-info-light mt-2">DirectX Graphics Engine</h2><h3 class="title is-6 has-text-info-light">Sep 2022 - Dec 2022</h3><h3 class="title is-6 has-text-info-light">Graphics Programmer</h3>
+                <p></p></div>
+        </div>
+
+
+        <div class="modal" id="wizardfrog">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+              <!-- Any other Bulma elements you want -->
+                <div class=projectvideo>
+                    <div class=videotext1>
+                        <h2 class="title is-3 has-text-info-light">About the Project</h2>
+                        <p>This character was created for the final project of the 3D Asset Pipeline for Games class. Unlike previous assignments, we were given free rein to make whatever we wanted to (as long as it fit into the fantasy theme).</p>
+                    </div>
+                    <div class=videotext2>
+                        <h2 class="title is-3 has-text-info-light">My Contributions</h2>
+                        <p>This mushroom frog was a completely original design, beginning as a notebook sketch. I modeled the character in ZBrush and textured it in Substance Painter. The skeleton was provided for us, so the next step was painting the weights. A fully-animated template character controller was also provided to us in Unreal Engine 5, we just had to create an IK Rig and retarget the animations.</p>
+                    </div>
+                    <div class=videoplay><iframe width="560" height="315" src="https://www.youtube.com/embed/XzNYT6IrjeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+
+            </div>
+            <button class="modal-close is-large" aria-label="close" id="wizardfrogclose"></button>
+        </div>
+
+        <div class="modal" id="graphics">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+              <!-- Any other Bulma elements you want -->
+                <div class=projectvideo>
+                    <div class=videotext1>
+                        <h2 class="title is-3 has-text-info-light">About the Project</h2>
+                        <p>This graphics engine was built over the course of a semester for the Game Graphics Programming class. We learned how to load 3D objects, apply texture and light to those objects using shaders, create cameras, render a sky, and implement PBR. All of this was done with the goal of simulating the techniques used in modern game engines.</p>
+                    </div>
+                    <div class=videotext2>
+                        <h2 class="title is-3 has-text-info-light">My Contributions</h2>
+                        <p>We were provided with a starter framework for this ongoing project. The forked repo’s code handled most of the low-level implementation, starting us off with the ability to draw basic 2D shapes onto the screen. After all the required assignments were finished, we picked an additional advanced rendering technique to include for our final project. I chose to implement a pairing of skybox blending and shadow mapping to create a day/night cycle.</p>
+                    </div>
+                    <div class=videoplay><iframe width="560" height="315" src="https://www.youtube.com/embed/YPrlXmsUbMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <p>Repo Link: <a href="https://github.com/xcg2903/DX11Starter">DirectX Project</a></p>
+                </div>
+
+            </div>
+            <button class="modal-close is-large" aria-label="close" id="graphicsclose"></button>
+        </div>
+
+    </div>
+</body>
+</html>
