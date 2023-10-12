@@ -1,14 +1,14 @@
 @font-face{
     font-family: robotohead; 
-    src: url(https://people.rit.edu/xcg2903/235/project1/media/RobotoCondensed-Bold.ttf);
+    src: url(/media/RobotoCondensed-Bold.ttf);
 }
 @font-face{
     font-family: robotohead2; 
-    src: url(https://people.rit.edu/xcg2903/235/project1/media/RobotoCondensed-Regular.ttf);
+    src: url(/media/RobotoCondensed-Regular.ttf);
 }
 @font-face{
     font-family: sans; 
-    src: url(https://people.rit.edu/xcg2903/235/project1/media/NunitoSans-SemiBold.ttf);
+    src: url(/media/NunitoSans-SemiBold.ttf);
 }
 @media only screen and (max-width: 550px) {
     iframe {
