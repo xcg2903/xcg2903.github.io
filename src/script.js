@@ -17,6 +17,12 @@ let carbutton;
 let carclose;
 let sunkbutton;
 let sunkclose;
+let lampbutton;
+let lampclose;
+let tinybutton;
+let tinyclose;
+let bubblebutton;
+let bubbleclose;
 
 //Variables projects
 let frogbutton;
@@ -46,10 +52,12 @@ function init(){
     carclose = document.querySelector("#caravanclose");
     sunkbutton = document.querySelector("#gallerydiv9");
     sunkclose = document.querySelector("#sunkenclose");
-    frogbutton = document.querySelector("#gallerydiv10");
-    frogclose = document.querySelector("#wizardfrogclose");
-    graphicsbutton = document.querySelector("#gallerydiv11");
-    graphicsclose = document.querySelector("#graphicsclose");
+    lampbutton = document.querySelector("#gallerydiv12");
+    lampclose = document.querySelector("#lamplitclose");
+    tinybutton = document.querySelector("#gallerydiv13");
+    tinyclose = document.querySelector("#tinysaursclose");
+    bubblebutton = document.querySelector("#gallerydiv14");
+    bubbleclose = document.querySelector("#bubbleclose");
 
     tsbutton.addEventListener('click', function(){ PopUp('#teamspirit')});
     tsclose.addEventListener('click', function(){ Close('#teamspirit')});
@@ -69,10 +77,12 @@ function init(){
     carclose.addEventListener('click', function(){ Close('#caravan')});
     sunkbutton.addEventListener('click', function(){ PopUp('#sunken')});
     sunkclose.addEventListener('click', function(){ Close('#sunken')});
-    frogbutton.addEventListener('click', function(){ PopUp('#wizardfrog')});
-    frogclose.addEventListener('click', function(){ Close('#wizardfrog')});
-    graphicsbutton.addEventListener('click', function(){ PopUp('#graphics')});
-    graphicsclose.addEventListener('click', function(){ Close('#graphics')});
+    lampbutton.addEventListener('click', function(){ PopUp('#lamplit')});
+    lampclose.addEventListener('click', function(){ Close('#lamplit')});
+    tinybutton.addEventListener('click', function(){ PopUp('#tinysaurs')});
+    tinyclose.addEventListener('click', function(){ Close('#tinysaurs')});
+    bubblebutton.addEventListener('click', function(){ PopUp('#bubble')});
+    bubbleclose.addEventListener('click', function(){ Close('#bubble')});
 }
 
 function PopUp(name){
